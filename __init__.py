@@ -14,8 +14,8 @@ def exercice(valeur):
     def carre_etoile(count):
         count=5
     for i in range (count):
-        print('*'* count)
-        return carre_etoiles
+        
+    return ('*'* count)
 
 
 if __name__ == "__main__":
