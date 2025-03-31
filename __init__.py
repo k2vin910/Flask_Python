@@ -15,7 +15,7 @@ def exercice(valeur):
         count=5
     for i in range (count):
         
-    return ('*'* count)
+    return ('*'* valeur)
 
 
 if __name__ == "__main__":
