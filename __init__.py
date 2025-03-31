@@ -7,9 +7,10 @@ app = Flask(__name__)
 @app.route('/<int:valeur>')
 def exercice(valeur):
     etoiles = ''
-    for i in range(valeur):
-        etoiles += '*' *i+1 +'<br>' 
-    return etoiles 
+        for i in range(i+1):
+            etoiles += '*'
+        etoiles += '<br>'
+    return etoiless 
 
 
 if __name__ == "__main__":
