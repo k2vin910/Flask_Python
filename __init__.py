@@ -9,7 +9,10 @@ def exercice(valeur):
     etoiles = ''
     for i in range(valeur):
         etoiles += '*' 
-    return etoiles return </br> x4
+    return etoiles 
+    def carretoile(valeur):
+    for i in range (valeur):
+        print('*'* valeur)
 
 
 if __name__ == "__main__":
