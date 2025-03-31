@@ -1,19 +1,15 @@
 from flask import Flask
-from flask import render_template
-from flask import json                                                                                                                                     
-app = Flask(__name__)                                                                                                                  
 
+app = Flask(__name__)
 
 @app.route('/<int:valeur>')
 def exercice(valeur):
     etoiles = ''
-    for j in range(valeur):
-        for i in range(valeur-j):
-            for k in range(valeur):
-            etoiles += '+'
-                etoiles +='*'
-        etoiles += '<br>'
+    for j in range(1, valeur + 1):
+        etoiles += ' ' * (valeur - j)  # Adding spaces for alignment
+        etoiles += '*' * j  # Adding stars
+        etoiles += '<br>'  # HTML line break
     return etoiles
 
 if __name__ == "__main__":
-  app.run(debug=True)
+    app.run(debug=True)
