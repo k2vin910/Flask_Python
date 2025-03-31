@@ -10,11 +10,11 @@ def exercice(valeur):
     for i in range(valeur):
         etoiles += '*' 
     return etoiles 
-
-    valeur=5
-    def carre_etoile(valeur):
-    for i in range (valeur):
-        print('*'* valeur)
+    
+    def carre_etoile(count):
+        count=5
+    for i in range (count):
+        print('*'* count)
         return carre_etoiles
 
 
