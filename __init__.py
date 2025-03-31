@@ -10,11 +10,12 @@ def exercice(valeur):
     for i in range(valeur):
         etoiles += '*' 
     return etoiles 
-    valeur= 5
+
+    valeur=5
     def carre_etoile(valeur):
     for i in range (valeur):
         print('*'* valeur)
-        carre_etoiles
+        return carre_etoiles
 
 
 if __name__ == "__main__":
