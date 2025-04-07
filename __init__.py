@@ -7,7 +7,7 @@ app = Flask(__name__)
 def counter(valeur):
     somme = 0 
 
-    for i in range(1, n + 1):
+    for i in range(1, valeur + 1):
         if i % 11 == 0:
             continue  
         if i % 5 == 0 or i % 7 == 0:
