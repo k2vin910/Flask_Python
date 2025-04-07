@@ -8,7 +8,7 @@ def exercice(n):
     count = ['0', '1'] if n > 1 else ['0']
 
     for _ in range(2, n):
-        count.append(str(int(count[-1]) + int(count[-2]))
+        count.append(str(int(count[-1]) + int(count[-2])))
 
     return ', '.join(count[:n])
 
