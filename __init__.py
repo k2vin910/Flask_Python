@@ -8,8 +8,8 @@ def exercice(valeurs):
     liste_nombres = [int(n) for n in liste_nombres]
     valeur_max = liste_nombres[0]
     for n in liste_nombres:
-        if nombre > valeur_max:
-            valeur_max=nombre
+        if liste_nombres > valeur_max:
+            valeur_max=liste_nombres
     return str(valeur_max)
 
 if __name__ == '__main__':
