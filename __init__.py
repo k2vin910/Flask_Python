@@ -5,12 +5,12 @@ app = Flask(__name__)
 
 @app.route('/<int:valeur>')
 def exercice(n):
-    seq = ['0', '1'] if n > 1 else ['0']
+    count = ['0', '1'] if n > 1 else ['0']
 
     for _ in range(2, n):
-        seq.append(str(int(seq[-1]) + int(seq[-2])))
+        count.append(str(int(count[-1]) + int(count[-2]))
 
-    return ', '.join(seq[:n])
+    return ', '.join(count[:n])
 
 if __name__ == "__main__":
     app.run(debug=True)
