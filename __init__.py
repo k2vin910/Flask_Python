@@ -3,8 +3,8 @@ from flask import render_template
 from flask import json                                                                                                                                     
 app = Flask(__name__)
 
-@app.route('/<int:n>')
-def counter(n):
+@app.route('/<int:valeur>')
+def counter(valeur):
     somme = 0 
 
     for i in range(1, n + 1):
