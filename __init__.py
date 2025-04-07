@@ -6,16 +6,13 @@ app = Flask(__name__)
 @app.route('/<int:valeur>')
 def exercice(valeur):
     a,b=0,1
-count= str[str(0)]
+count= str[str(a)]
     if valeur > 1:
-        count.append(str(b))  # Then 1
-
+        count.append(str(b))  
     for _ in range(2, valeur):
         c = a + b
         count.append(str(c))
         a, b = b, c
-
-    # Return the sequence nicely formatted
 return ', '.join(count)
 
 
