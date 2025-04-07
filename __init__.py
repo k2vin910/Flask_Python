@@ -11,7 +11,7 @@ def exercice(valeur):
         for i in range(j+1):
             etoiles += ' '   
         for i in range(j-1,0,-1):
-            etoiles += '0'
+            etoiles += ''
         etoiles += '<br>'
     return etoiles
 
