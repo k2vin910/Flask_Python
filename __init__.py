@@ -6,9 +6,9 @@ app = Flask(__name__)
 def exercice(valeurs):
     liste_nombres = valeurs.split('/')
     liste_nombres = [int(nombre) for nombre in liste_nombres]
-    valeur_main = liste_nombres[0]
+    valeur_min = liste_nombres[0]
     for nombre in liste_nombres:
-        if nombre < valeur_max:
+        if nombre < valeur_min:
             valeur_min=nombre
     return str(valeur_min)
 
