@@ -13,7 +13,7 @@ def counter(n):
         if i % 5 == 0 or i % 7 == 0:
             somme += i  # Si divisible par 5 ou 7, on ajoute à la somme
 
-        if somme => 5000:
+        if somme >= 5000:
             break  # Si la somme dépasse 5000, on arrête la boucle
 
     return f"La somme finale est : {somme}"
