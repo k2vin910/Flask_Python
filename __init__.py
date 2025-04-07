@@ -3,7 +3,7 @@ from flask import render_template
 from flask import json                                                                                                                                     
 app = Flask(__name__)
 
-@app.route('/<int:valeur>')
+@app.route('/<int:n>')
 def counter(n):
     somme = 0  # Initialisation de la somme
 
