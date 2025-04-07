@@ -4,19 +4,13 @@ from flask import json
 app = Flask(__name__)
 
 @app.route('/<int:valeur>')
-def exercice(valeur):
-    a, b = 0, 1
-    count = [str(0)] 
+def exercice(n):
+    seq = ['0', '1'] if n > 1 else ['0']
 
-    if valeur > 1:
-        count.append(str(b))
+    for _ in range(2, n):
+        seq.append(str(int(seq[-1]) + int(seq[-2])))
 
-    for _ in range(2, valeur):
-        c = a + b
-        count.append(str(c))
-        a, b = b, c
-
-    return ', '.join(count)  
+    return ', '.join(seq[:n])
 
 if __name__ == "__main__":
     app.run(debug=True)
